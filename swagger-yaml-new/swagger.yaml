@@ -214,7 +214,7 @@ paths:
       parameters:
       - in: "body"
         name: "body"
-        description: "order placed for purchasing the petsdfgsfdgsd"
+        description: "order placed for purchasing the update"
         required: true
         schema:
           $ref: "#/definitions/Order"
