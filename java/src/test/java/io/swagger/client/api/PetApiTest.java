@@ -53,22 +53,6 @@ public class PetApiTest {
     }
     
     /**
-     * Finds Pets by status
-     *
-     * Multiple status values can be provided with comma separated strings
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void findPetsByStatusTest() throws ApiException {
-        List<String> status = null;
-        // List<Pet> response = api.findPetsByStatus(status);
-
-        // TODO: test validations
-    }
-    
-    /**
      * Finds Pets by tags
      *
      * Muliple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.

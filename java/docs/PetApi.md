@@ -6,7 +6,6 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addPet**](PetApi.md#addPet) | **POST** /pet | Add a new pet to the store
 [**deletePet**](PetApi.md#deletePet) | **DELETE** /pet/{petId} | Deletes a pet
-[**findPetsByStatus**](PetApi.md#findPetsByStatus) | **GET** /pet/findByStatus | Finds Pets by status
 [**findPetsByTags**](PetApi.md#findPetsByTags) | **GET** /pet/findByTags | Finds Pets by tags
 [**getPetById**](PetApi.md#getPetById) | **GET** /pet/{petId} | Find pet by ID
 [**updatePet**](PetApi.md#updatePet) | **PUT** /pet | Update an existing pet
@@ -110,59 +109,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 null (empty response body)
-
-### Authorization
-
-[petstore_auth](../README.md#petstore_auth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/xml, application/json
-
-<a name="findPetsByStatus"></a>
-# **findPetsByStatus**
-> List&lt;Pet&gt; findPetsByStatus(status)
-
-Finds Pets by status
-
-Multiple status values can be provided with comma separated strings
-
-### Example
-```java
-// Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.PetApi;
-
-ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure OAuth2 access token for authorization: petstore_auth
-OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
-petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
-
-PetApi apiInstance = new PetApi();
-List<String> status = Arrays.asList("status_example"); // List<String> | Status values that need to be considered for filter
-try {
-    List<Pet> result = apiInstance.findPetsByStatus(status);
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling PetApi#findPetsByStatus");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **status** | [**List&lt;String&gt;**](String.md)| Status values that need to be considered for filter | [enum: available, pending, sold]
-
-### Return type
-
-[**List&lt;Pet&gt;**](Pet.md)
 
 ### Authorization
 
@@ -305,7 +251,7 @@ OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
 petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
 
 PetApi apiInstance = new PetApi();
-Pet body = new Pet(); // Pet | Pet object that needs to be added to the store
+Pet body = new Pet(); // Pet | Pet object that needs to be added to the storeasdfasdfasdffdasfasdf
 try {
     apiInstance.updatePet(body);
 } catch (ApiException e) {
@@ -318,7 +264,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**Pet**](Pet.md)| Pet object that needs to be added to the store |
+ **body** | [**Pet**](Pet.md)| Pet object that needs to be added to the storeasdfasdfasdffdasfasdf |
 
 ### Return type
 
