@@ -12,7 +12,7 @@ info:
     email: "apiteam@swagger.io"
   license:
     name: "Apache 2.0"
-    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.htmlsdfdsg"
 host: "stage-virtserver.swaggerhub.com"
 basePath: "/qatest1Org/gitHubSync/1.0.0"
 tags:
@@ -26,7 +26,7 @@ tags:
 - name: "user"
   description: "Operations about user"
   externalDocs:
-    description: "Find out more about our store"
+    description: "Find out more about our storesdfgfsdgsdfg"
     url: "http://swagger.io"
 schemes:
 - "https"
@@ -48,7 +48,7 @@ paths:
       parameters:
       - in: "body"
         name: "body"
-        description: "Pet object that needs to be added to the store"
+        description: "Pet object that needs to be added to the storesfdgds"
         required: true
         schema:
           $ref: "#/definitions/Pet"
@@ -74,7 +74,7 @@ paths:
       parameters:
       - in: "body"
         name: "body"
-        description: "Pet object that needs to be added to the"
+        description: "Pet object that needs to be added to thesdfgfsdgsdg"
         required: true
         schema:
           $ref: "#/definitions/Pet"
@@ -89,40 +89,6 @@ paths:
       - petstore_auth:
         - "write:pets"
         - "read:pets"
-  /pet/findByTags:
-    get:
-      tags:
-      - "pet"
-      summary: "Finds Pets by tags"
-      description: "Muliple tags can be provided with comma separated strings. Use\
-        \ tag1, tag2, tag3 for testing."
-      operationId: "findPetsByTags"
-      produces:
-      - "application/xml"
-      - "application/json"
-      parameters:
-      - name: "tags"
-        in: "query"
-        description: "Tags to filter by"
-        required: true
-        type: "array"
-        items:
-          type: "string"
-        collectionFormat: "multi"
-      responses:
-        200:
-          description: "successful operation"
-          schema:
-            type: "array"
-            items:
-              $ref: "#/definitions/Pet"
-        400:
-          description: "Invalid tag value"
-      security:
-      - petstore_auth:
-        - "write:pets"
-        - "read:pets"
-      deprecated: true
   /pet/{petId}:
     get:
       tags:
