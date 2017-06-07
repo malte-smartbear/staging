@@ -1,0 +1,32 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "This is a simple API",
+    "version" : "1.0.0",
+    "title" : "Simple Inventory API"
+  },
+  "host" : "stage-virtserver.swaggerhub.com",
+  "basePath" : "/hotFix-org/SHUB-3853/1.0.0",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/inventory" : {
+      "get" : {
+        "summary" : "searches inventory test",
+        "operationId" : "searchInventory",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "search results matching criteria"
+          },
+          "default" : {
+            "description" : "General Error",
+            "schema" : {
+              "$ref" : "#/definitions/ErrorModel"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}
