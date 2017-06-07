@@ -44,24 +44,6 @@
           }
         }
       }
-    },
-    "/inventory3" : {
-      "get" : {
-        "summary" : "searches inventory test",
-        "operationId" : "searchInventory3",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "search results matching criteria"
-          },
-          "default" : {
-            "description" : "General Error",
-            "schema" : {
-              "$ref" : "#/definitions/ErrorModel-update"
-            }
-          }
-        }
-      }
     }
   },
   "definitions" : {
