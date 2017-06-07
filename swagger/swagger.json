@@ -21,7 +21,7 @@
           "default" : {
             "description" : "General Error",
             "schema" : {
-              "$ref" : "#/definitions/ErrorModel"
+              "$ref" : "#/definitions/ErrorModel-update"
             }
           }
         }
@@ -29,12 +29,12 @@
     }
   },
   "definitions" : {
-    "ErrorModel" : {
+    "ErrorModel-update" : {
       "required" : [ "code", "message" ],
       "properties" : {
         "code" : {
           "type" : "integer",
-          "format" : "int32"
+          "format" : "int1234"
         },
         "message" : {
           "type" : "string"
