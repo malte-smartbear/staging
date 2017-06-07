@@ -9,10 +9,46 @@
   "basePath" : "/hotFix-org/SHUB-3853/1.0.0",
   "schemes" : [ "https" ],
   "paths" : {
-    "/inventory" : {
+    "/inventory1" : {
       "get" : {
         "summary" : "searches inventory test",
-        "operationId" : "searchInventory",
+        "operationId" : "searchInventory1",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "search results matching criteria"
+          },
+          "default" : {
+            "description" : "General Error",
+            "schema" : {
+              "$ref" : "#/definitions/ErrorModel-private"
+            }
+          }
+        }
+      }
+    },
+    "/inventory2" : {
+      "get" : {
+        "summary" : "searches inventory test",
+        "operationId" : "searchInventory2",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "search results matching criteria"
+          },
+          "default" : {
+            "description" : "General Error",
+            "schema" : {
+              "$ref" : "#/definitions/ErrorModel-update"
+            }
+          }
+        }
+      }
+    },
+    "/inventory3" : {
+      "get" : {
+        "summary" : "searches inventory test",
+        "operationId" : "searchInventory3",
         "parameters" : [ ],
         "responses" : {
           "200" : {
