@@ -39,7 +39,7 @@
           "default" : {
             "description" : "General Error",
             "schema" : {
-              "$ref" : "#/definitions/ErrorModel-update"
+              "$ref" : "#/definitions/ErrorModel-public"
             }
           }
         }
