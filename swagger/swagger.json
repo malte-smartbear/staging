@@ -46,5 +46,18 @@
       }
     }
   },
-  "definitions" : { }
+  "definitions" : {
+    "ErrorModel-public" : {
+      "required" : [ "code", "message" ],
+      "properties" : {
+        "code" : {
+          "type" : "integer",
+          "format" : "int1234"
+        },
+        "message" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
 }
