@@ -3,7 +3,7 @@
   "info" : {
     "description" : "This is an example of using OAuth2 Application Flow in a specification to describe security to your API.",
     "version" : "1.0.0",
-    "title" : "Sample Application Flow OAuth2 Project blah"
+    "title" : "Sample Application Flow OAuth2 Project"
   },
   "host" : "stage-virtserver.swaggerhub.com",
   "basePath" : "/qa1_org1/GitHub-Integration/1.0.0",
